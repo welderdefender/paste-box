@@ -1,8 +1,7 @@
 package com.example.pasteboxproject.controller;
 
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RestController;
+import com.example.pasteboxproject.api.request.PasteBoxRequest;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.Collection;
 import java.util.Collections;
@@ -18,5 +17,10 @@ public class PasteBoxController {
     @GetMapping("/{hash}")
     public String getByHash(@PathVariable String hash) {
         return hash;
+    }
+
+    @PostMapping("/")
+    public String add(@RequestBody PasteBoxRequest request) {
+        return request.getData();
     }
 }
