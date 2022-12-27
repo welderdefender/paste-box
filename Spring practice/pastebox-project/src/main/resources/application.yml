@@ -1,0 +1,3 @@
+app:
+  host: http://pasteboxproject.example.com
+  public_list_size: 10
