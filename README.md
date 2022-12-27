@@ -18,7 +18,7 @@
 
 ## Запуск приложения
 1. Склонировать репозиторий и открыть его в IntelliJ IDEA.
-2. Ввести в терминале команду docker run -p 7777:8080 pastebox:latest
+2. Ввести в терминале команду **docker run -p 7777:8080 pastebox:latest**
 
 ## Автор
 Со мной можно связаться в [Telegram](https://t.me/welderdefender).
